@@ -1,0 +1,46 @@
+{
+  "name": "nutribox",
+  "version": "1.0.0",
+  "description": "A comprehensive health meal platform that creates personalized nutrition plans based on your unique needs and preferences",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "live-server --port=8000",
+    "build": "echo 'No build process required for static site'",
+    "test": "echo 'No tests specified'",
+    "lint": "echo 'No linting configured'"
+  },
+  "keywords": [
+    "nutrition",
+    "meal-planning",
+    "health",
+    "personalized",
+    "diet",
+    "fitness",
+    "wellness",
+    "food",
+    "meal-builder",
+    "protein-calculator"
+  ],
+  "author": "NutriBox Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/nutribox.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/nutribox/issues"
+  },
+  "homepage": "https://github.com/yourusername/nutribox#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+} 
