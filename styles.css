@@ -8,6 +8,22 @@
   opacity: 0.1;
   animation: float 6s ease-in-out infinite;
 }
+.modal-content {
+    max-height: 80vh;
+    overflow-y: auto;
+}
+.modal-header {
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 10;
+}
+
+.modal-footer {
+    position: sticky;
+    bottom: 0;
+    background: white;
+}
 
 .floating-food:nth-child(1) { top: 10%; left: 5%; animation-delay: 0s; }
 .floating-food:nth-child(2) { top: 20%; right: 10%; animation-delay: 1s; }
@@ -758,6 +774,55 @@ body {
 /* Notification Styles */
 #notificationContainer {
   pointer-events: none;
+}
+
+/* Modal layout fixes for cart modal
+   - Keep header and footer visible
+   - Make the middle cart items area scrollable
+   - Use flexbox and a viewport-relative height so modal fits on all screens
+*/
+#cartModal .max-w-2xl.w-full {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 720px; /* keep the existing max width */
+  height: 90vh; /* fixed relative to viewport */
+  max-height: 90vh;
+  box-sizing: border-box;
+}
+
+/* Header: keep visible */
+#cartModal .max-w-2xl.w-full > .p-6.border-b {
+  flex: 0 0 auto;
+}
+
+/* Body (cart items): scrollable area only */
+#cartModal #cartItems {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
+  padding: 16px; /* keep spacing consistent */
+}
+
+/* Footer: keep visible */
+#cartModal .max-w-2xl.w-full > .p-6.border-t {
+  flex: 0 0 auto;
+}
+
+/* Ensure modal overlay fills viewport and centers content */
+#cartModal {
+  align-items: center;
+  justify-content: center;
+}
+
+/* Small screens: make modal nearly full-screen */
+@media (max-width: 640px) {
+  #cartModal .max-w-2xl.w-full {
+    max-width: 96vw;
+    height: 92vh;
+    max-height: 92vh;
+    border-radius: 12px;
+  }
 }
 
 #notificationContainer > div {

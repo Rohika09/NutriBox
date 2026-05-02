@@ -456,7 +456,7 @@
               <button onclick="scheduleDelivery()" class="flex-1 nb-btn py-3">
                 <i class="fas fa-calendar mr-2"></i>Schedule Delivery
               </button>
-              <button onclick="confirmOrder()" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition">
+              <button id="confirmOrderBtn" onclick="confirmOrder()" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition">
                 <i class="fas fa-check mr-2"></i>Confirm Order
               </button>
             </div>
@@ -491,6 +491,9 @@
                </button>
                <button onclick="confirmDelivery()" class="flex-1 nb-btn py-2">
                  Confirm Delivery
+               </button>
+               <button id="confirmBtn" class="flex-1 nb-btn py-2">
+                 Confirm Order
                </button>
              </div>
            </div>

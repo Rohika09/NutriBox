@@ -75,78 +75,104 @@ const mealDatabase = {
       { name: "Tandoori Chicken", protein: 25, calories: 180, carbs: 2, fat: 8, ingredients: "Chicken, yogurt, spices", category: "protein" },
       { name: "Paneer Tikka", protein: 21, calories: 220, carbs: 8, fat: 12, ingredients: "Paneer, spices, vegetables", category: "protein" },
       { name: "Dal Makhani", protein: 12, calories: 160, carbs: 25, fat: 4, ingredients: "Black lentils, spices, cream", category: "protein" },
-      { name: "Chickpea Curry", protein: 15, calories: 200, carbs: 30, fat: 6, ingredients: "Chickpeas, tomatoes, spices", category: "protein" }
+      { name: "Chickpea Curry", protein: 15, calories: 200, carbs: 30, fat: 6, ingredients: "Chickpeas, tomatoes, spices", category: "protein" },
+      { name: "Chicken Biryani", protein: 22, calories: 320, carbs: 45, fat: 10, ingredients: "Chicken, rice, spices", category: "protein" },
+      { name: "Fish Curry", protein: 23, calories: 210, carbs: 5, fat: 9, ingredients: "Fish, coconut milk, spices", category: "protein" }
     ],
     carbs: [
       { name: "Basmati Rice", protein: 4, calories: 150, carbs: 35, fat: 0, ingredients: "Basmati rice, spices", category: "carbs" },
       { name: "Roti", protein: 3, calories: 120, carbs: 25, fat: 2, ingredients: "Whole wheat flour, water", category: "carbs" },
-      { name: "Naan", protein: 4, calories: 180, carbs: 30, fat: 4, ingredients: "Flour, yogurt, yeast", category: "carbs" }
+      { name: "Naan", protein: 4, calories: 180, carbs: 30, fat: 4, ingredients: "Flour, yogurt, yeast", category: "carbs" },
+      { name: "Jeera Rice", protein: 3, calories: 160, carbs: 36, fat: 2, ingredients: "Basmati rice, cumin, ghee", category: "carbs" },
+      { name: "Idli", protein: 2, calories: 40, carbs: 8, fat: 0, ingredients: "Rice, urad dal", category: "carbs" }
     ],
     vegetables: [
       { name: "Palak Paneer", protein: 8, calories: 140, carbs: 8, fat: 10, ingredients: "Spinach, paneer, spices", category: "vegetables" },
       { name: "Baingan Bharta", protein: 3, calories: 80, carbs: 12, fat: 3, ingredients: "Eggplant, onions, tomatoes", category: "vegetables" },
-      { name: "Mixed Vegetables", protein: 4, calories: 100, carbs: 15, fat: 2, ingredients: "Carrots, peas, beans", category: "vegetables" }
+      { name: "Mixed Vegetables", protein: 4, calories: 100, carbs: 15, fat: 2, ingredients: "Carrots, peas, beans", category: "vegetables" },
+      { name: "Aloo Gobi", protein: 4, calories: 150, carbs: 20, fat: 6, ingredients: "Potato, cauliflower, spices", category: "vegetables" },
+      { name: "Bhindi Masala", protein: 2, calories: 90, carbs: 10, fat: 4, ingredients: "Okra, onions, spices", category: "vegetables" }
     ],
     fruits: [
       { name: "Mango Chutney", protein: 1, calories: 60, carbs: 15, fat: 0, ingredients: "Mango, spices, sugar", category: "fruits" },
-      { name: "Mixed Fruit Salad", protein: 2, calories: 80, carbs: 18, fat: 0, ingredients: "Apple, banana, orange", category: "fruits" }
+      { name: "Mixed Fruit Salad", protein: 2, calories: 80, carbs: 18, fat: 0, ingredients: "Apple, banana, orange", category: "fruits" },
+      { name: "Papaya Salad", protein: 1, calories: 70, carbs: 18, fat: 0, ingredients: "Papaya, lime, spices", category: "fruits" }
     ]
   },
   mediterranean: {
     protein: [
       { name: "Grilled Salmon", protein: 28, calories: 220, carbs: 0, fat: 12, ingredients: "Salmon, olive oil, herbs", category: "protein" },
       { name: "Greek Yogurt", protein: 20, calories: 150, carbs: 8, fat: 4, ingredients: "Greek yogurt, honey", category: "protein" },
-      { name: "Hummus", protein: 8, calories: 120, carbs: 15, fat: 6, ingredients: "Chickpeas, tahini, olive oil", category: "protein" }
+      { name: "Hummus", protein: 8, calories: 120, carbs: 15, fat: 6, ingredients: "Chickpeas, tahini, olive oil", category: "protein" },
+      { name: "Stuffed Eggplant", protein: 6, calories: 180, carbs: 14, fat: 10, ingredients: "Eggplant, tomatoes, herbs", category: "protein" },
+      { name: "Lentil Soup", protein: 10, calories: 140, carbs: 20, fat: 3, ingredients: "Lentils, vegetables, olive oil", category: "protein" }
     ],
     carbs: [
       { name: "Quinoa Salad", protein: 6, calories: 140, carbs: 25, fat: 3, ingredients: "Quinoa, vegetables, olive oil", category: "carbs" },
-      { name: "Whole Grain Pita", protein: 4, calories: 130, carbs: 28, fat: 2, ingredients: "Whole wheat flour, yeast", category: "carbs" }
+      { name: "Whole Grain Pita", protein: 4, calories: 130, carbs: 28, fat: 2, ingredients: "Whole wheat flour, yeast", category: "carbs" },
+      { name: "Couscous", protein: 5, calories: 160, carbs: 33, fat: 1, ingredients: "Semolina, vegetables", category: "carbs" },
+      { name: "Farro Salad", protein: 7, calories: 170, carbs: 30, fat: 4, ingredients: "Farro, herbs, olive oil", category: "carbs" }
     ],
     vegetables: [
       { name: "Greek Salad", protein: 4, calories: 90, carbs: 8, fat: 6, ingredients: "Cucumber, tomatoes, olives, feta", category: "vegetables" },
-      { name: "Ratatouille", protein: 3, calories: 110, carbs: 12, fat: 4, ingredients: "Eggplant, zucchini, tomatoes", category: "vegetables" }
+      { name: "Ratatouille", protein: 3, calories: 110, carbs: 12, fat: 4, ingredients: "Eggplant, zucchini, tomatoes", category: "vegetables" },
+      { name: "Grilled Veg Skewers", protein: 3, calories: 120, carbs: 10, fat: 5, ingredients: "Peppers, zucchini, mushrooms", category: "vegetables" }
     ],
     fruits: [
       { name: "Fresh Figs", protein: 1, calories: 70, carbs: 18, fat: 0, ingredients: "Fresh figs", category: "fruits" },
-      { name: "Mediterranean Fruit Mix", protein: 2, calories: 85, carbs: 20, fat: 0, ingredients: "Grapes, oranges, pomegranate", category: "fruits" }
+      { name: "Mediterranean Fruit Mix", protein: 2, calories: 85, carbs: 20, fat: 0, ingredients: "Grapes, oranges, pomegranate", category: "fruits" },
+      { name: "Orange Slices with Honey", protein: 1, calories: 90, carbs: 22, fat: 0, ingredients: "Orange, honey", category: "fruits" }
     ]
   },
   asian: {
     protein: [
       { name: "Teriyaki Chicken", protein: 26, calories: 200, carbs: 8, fat: 8, ingredients: "Chicken, soy sauce, ginger", category: "protein" },
       { name: "Tofu Stir Fry", protein: 18, calories: 160, carbs: 12, fat: 6, ingredients: "Tofu, vegetables, soy sauce", category: "protein" },
-      { name: "Steamed Fish", protein: 24, calories: 180, carbs: 2, fat: 6, ingredients: "White fish, ginger, soy sauce", category: "protein" }
+      { name: "Steamed Fish", protein: 24, calories: 180, carbs: 2, fat: 6, ingredients: "White fish, ginger, soy sauce", category: "protein" },
+      { name: "Korean BBQ Beef", protein: 28, calories: 260, carbs: 6, fat: 10, ingredients: "Beef, gochujang, garlic", category: "protein" },
+      { name: "Sushi Roll", protein: 12, calories: 200, carbs: 28, fat: 4, ingredients: "Rice, fish, seaweed", category: "protein" }
     ],
     carbs: [
       { name: "Brown Rice", protein: 3, calories: 110, carbs: 23, fat: 1, ingredients: "Brown rice", category: "carbs" },
-      { name: "Noodles", protein: 4, calories: 140, carbs: 28, fat: 2, ingredients: "Wheat noodles, vegetables", category: "carbs" }
+      { name: "Noodles", protein: 4, calories: 140, carbs: 28, fat: 2, ingredients: "Wheat noodles, vegetables", category: "carbs" },
+      { name: "Sticky Rice", protein: 3, calories: 160, carbs: 36, fat: 0, ingredients: "Glutinous rice", category: "carbs" },
+      { name: "Udon Noodles", protein: 6, calories: 180, carbs: 35, fat: 2, ingredients: "Udon, broth", category: "carbs" }
     ],
     vegetables: [
       { name: "Stir Fried Vegetables", protein: 3, calories: 80, carbs: 10, fat: 2, ingredients: "Bok choy, mushrooms, carrots", category: "vegetables" },
-      { name: "Seaweed Salad", protein: 2, calories: 60, carbs: 8, fat: 1, ingredients: "Seaweed, sesame oil, vinegar", category: "vegetables" }
+      { name: "Seaweed Salad", protein: 2, calories: 60, carbs: 8, fat: 1, ingredients: "Seaweed, sesame oil, vinegar", category: "vegetables" },
+      { name: "Kimchi", protein: 2, calories: 30, carbs: 5, fat: 0, ingredients: "Napa cabbage, chili, garlic", category: "vegetables" },
+      { name: "Bok Choy Stir Fry", protein: 3, calories: 70, carbs: 6, fat: 2, ingredients: "Bok choy, garlic, soy", category: "vegetables" }
     ],
     fruits: [
       { name: "Lychee", protein: 1, calories: 65, carbs: 16, fat: 0, ingredients: "Fresh lychee", category: "fruits" },
-      { name: "Asian Pear", protein: 1, calories: 55, carbs: 14, fat: 0, ingredients: "Asian pear", category: "fruits" }
+      { name: "Asian Pear", protein: 1, calories: 55, carbs: 14, fat: 0, ingredients: "Asian pear", category: "fruits" },
+      { name: "Mango Sticky Rice", protein: 4, calories: 250, carbs: 50, fat: 6, ingredients: "Mango, sticky rice, coconut milk", category: "fruits" }
     ]
   },
   western: {
     protein: [
       { name: "Grilled Chicken Breast", protein: 30, calories: 180, carbs: 0, fat: 4, ingredients: "Chicken breast, herbs, olive oil", category: "protein" },
       { name: "Lean Beef Steak", protein: 32, calories: 220, carbs: 0, fat: 8, ingredients: "Beef, herbs, garlic", category: "protein" },
-      { name: "Eggs Benedict", protein: 16, calories: 200, carbs: 8, fat: 12, ingredients: "Eggs, ham, hollandaise", category: "protein" }
+      { name: "Eggs Benedict", protein: 16, calories: 200, carbs: 8, fat: 12, ingredients: "Eggs, ham, hollandaise", category: "protein" },
+      { name: "Turkey Sandwich", protein: 22, calories: 320, carbs: 34, fat: 8, ingredients: "Turkey, bread, veggies", category: "protein" },
+      { name: "BBQ Pulled Pork", protein: 24, calories: 350, carbs: 10, fat: 18, ingredients: "Pork, BBQ sauce", category: "protein" }
     ],
     carbs: [
       { name: "Sweet Potato", protein: 2, calories: 100, carbs: 23, fat: 0, ingredients: "Sweet potato, herbs", category: "carbs" },
-      { name: "Whole Grain Bread", protein: 4, calories: 120, carbs: 22, fat: 2, ingredients: "Whole wheat flour, seeds", category: "carbs" }
+      { name: "Whole Grain Bread", protein: 4, calories: 120, carbs: 22, fat: 2, ingredients: "Whole wheat flour, seeds", category: "carbs" },
+      { name: "Pancakes", protein: 6, calories: 220, carbs: 38, fat: 6, ingredients: "Flour, eggs, milk", category: "carbs" },
+      { name: "Mashed Potatoes", protein: 3, calories: 150, carbs: 20, fat: 6, ingredients: "Potatoes, butter, milk", category: "carbs" }
     ],
     vegetables: [
       { name: "Roasted Vegetables", protein: 3, calories: 90, carbs: 12, fat: 3, ingredients: "Broccoli, carrots, bell peppers", category: "vegetables" },
-      { name: "Caesar Salad", protein: 4, calories: 110, carbs: 8, fat: 6, ingredients: "Romaine lettuce, parmesan, croutons", category: "vegetables" }
+      { name: "Caesar Salad", protein: 4, calories: 110, carbs: 8, fat: 6, ingredients: "Romaine lettuce, parmesan, croutons", category: "vegetables" },
+      { name: "Steamed Asparagus", protein: 2, calories: 30, carbs: 3, fat: 0, ingredients: "Asparagus, lemon", category: "vegetables" }
     ],
     fruits: [
       { name: "Berry Mix", protein: 2, calories: 70, carbs: 16, fat: 0, ingredients: "Strawberries, blueberries, raspberries", category: "fruits" },
-      { name: "Apple Slices", protein: 1, calories: 60, carbs: 15, fat: 0, ingredients: "Fresh apple", category: "fruits" }
+      { name: "Apple Slices", protein: 1, calories: 60, carbs: 15, fat: 0, ingredients: "Fresh apple", category: "fruits" },
+      { name: "Fruit Parfait", protein: 6, calories: 160, carbs: 24, fat: 4, ingredients: "Yogurt, berries, granola", category: "fruits" }
     ]
   }
 };
@@ -247,6 +273,22 @@ document.addEventListener('DOMContentLoaded', function() {
 function initializeApp() {
   // Set up event listeners
   setupEventListeners();
+
+  // Ensure notification container is fixed to viewport so notifications
+  // remain visible regardless of scroll or transformed ancestors.
+  (function ensureNotificationContainer() {
+    const container = document.getElementById('notificationContainer');
+    if (!container) return;
+    // Move to body root to avoid being inside a transformed/scrolling parent
+    if (container.parentElement !== document.body) document.body.appendChild(container);
+    // Force fixed positioning in the viewport and high z-index
+    container.style.position = 'fixed';
+    container.style.top = '1rem';
+    container.style.right = '1rem';
+    container.style.zIndex = '99999';
+    container.style.overflow = 'visible';
+    container.style.pointerEvents = 'auto';
+  })();
   
   // Set minimum date for delivery to tomorrow
   const tomorrow = new Date();
@@ -959,7 +1001,8 @@ function addToBox() {
 function updateCartCount() {
   const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
   const cartCountElement = document.getElementById('cartCount');
-  cartCountElement.textContent = totalItems;
+  // Cap visual count to avoid layout overflow
+  cartCountElement.textContent = totalItems > 99 ? '99+' : totalItems;
   
   // Add bounce animation to cart button when items are added
   if (totalItems > 0) {
@@ -1104,10 +1147,35 @@ function openCart() {
   }
 
   document.getElementById('cartModal').classList.remove('hidden');
+  // Prevent background from scrolling while cart modal is open
+  lockBodyScroll();
 }
 
 function closeCart() {
   document.getElementById('cartModal').classList.add('hidden');
+  // Re-enable body scrolling when modal closed
+  unlockBodyScroll();
+}
+
+// Prevent background scrolling when modals are open
+function lockBodyScroll() {
+  // Hide page scroll while modal is open
+  document.body.classList.add('nb-modal-open');
+  // Prevent background scrolling
+  try {
+    document.body.style.overflow = 'hidden';
+  } catch (e) {}
+  // prevent page shift by preserving scrollbar space
+  const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
+  if (scrollBarWidth > 0) document.body.style.paddingRight = scrollBarWidth + 'px';
+}
+
+function unlockBodyScroll() {
+  document.body.classList.remove('nb-modal-open');
+  try {
+    document.body.style.overflow = 'auto';
+  } catch (e) {}
+  document.body.style.paddingRight = '';
 }
 
 function removeFromCart(mealName) {
@@ -1120,10 +1188,12 @@ function removeFromCart(mealName) {
 function scheduleDelivery() {
   closeCart();
   document.getElementById('deliveryModal').classList.remove('hidden');
+  lockBodyScroll();
 }
 
 function closeDeliveryModal() {
   document.getElementById('deliveryModal').classList.add('hidden');
+  unlockBodyScroll();
 }
 
 function confirmDelivery() {
@@ -1139,10 +1209,88 @@ function confirmDelivery() {
   showOrderConfirmation('delivery', { date, time });
 }
 
-function confirmOrder() {
+async function confirmOrder() {
+  // Attempt to send order to backend, but still proceed locally if it fails
+  try {
+    await sendOrderToBackend();
+  } catch (err) {
+    // If backend save fails, notify and continue with local confirmation
+    showNotification('Order not saved to server, placed locally', 'warning');
+  }
+
   closeCart();
   showOrderConfirmation('order');
 }
+
+// -------------------- Backend integration helpers --------------------
+// Sends the current order (cart) to the backend API using fetch
+async function sendOrderToBackend(deliveryInfo = null) {
+  // Build a simple order payload from the `cart` array and user info
+  const items = cart.map(item => ({
+    name: item.name,
+    quantity: item.quantity,
+    isCustom: item.isCustom || false,
+    protein: item.protein,
+    calories: item.calories,
+    carbs: item.carbs,
+    fat: item.fat
+  }));
+
+  const totalBoxes = cart.reduce((sum, it) => sum + it.quantity, 0);
+  const totalProtein = cart.reduce((sum, it) => sum + (it.protein * it.quantity), 0);
+  const totalCalories = cart.reduce((sum, it) => sum + (it.calories * it.quantity), 0);
+
+  const payload = {
+    customerName: 'Guest', // in a real app collect customer info
+    items,
+    totalBoxes,
+    totalProtein,
+    totalCalories,
+    delivery: deliveryInfo
+  };
+
+  try {
+    // POST to the backend. Backend runs on port 5000 by default.
+    const res = await fetch('http://localhost:5000/api/orders', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    });
+
+    if (!res.ok) {
+      const error = await res.json().catch(() => ({}));
+      throw new Error(error.error || 'Failed to save order');
+    }
+
+    const saved = await res.json();
+    // Tell the user the order was saved on the server
+    showNotification('Order saved to server (ID: ' + (saved._id || 'n/a') + ')', 'success');
+    return saved;
+  } catch (err) {
+    console.error('sendOrderToBackend error', err);
+    showNotification('Could not save order to server: ' + err.message, 'error');
+    throw err; // re-throw so caller can react
+  }
+}
+
+// Example function to fetch saved orders from backend
+// Useful during development / for admin view
+async function fetchOrdersFromBackend() {
+  try {
+    const res = await fetch('http://localhost:5000/api/orders');
+    if (!res.ok) throw new Error('Failed to fetch orders');
+    const orders = await res.json();
+    console.log('Orders from backend:', orders);
+    // For demo purposes show the count
+    showNotification('Fetched ' + orders.length + ' orders from server', 'info');
+    return orders;
+  } catch (err) {
+    console.error(err);
+    showNotification('Error fetching orders: ' + err.message, 'error');
+    return [];
+  }
+}
+
 
 function showOrderConfirmation(type, deliveryInfo = null) {
   const modal = document.createElement('div');
@@ -1520,6 +1668,7 @@ function showAlertModal(title, message, type = 'info') {
   messageEl.textContent = message;
   
   modal.classList.remove('hidden');
+  lockBodyScroll();
   
   // Focus the OK button for accessibility
   setTimeout(() => {
@@ -1531,6 +1680,7 @@ function showAlertModal(title, message, type = 'info') {
 function closeAlertModal() {
   const modal = document.getElementById('alertModal');
   modal.classList.add('hidden');
+  unlockBodyScroll();
 }
 
 function showInputModal(title, message, placeholder, callback, type = 'info') {
@@ -1565,6 +1715,7 @@ function showInputModal(title, message, placeholder, callback, type = 'info') {
   currentInputCallback = callback;
   
   modal.classList.remove('hidden');
+  lockBodyScroll();
   
   // Focus the input field
   setTimeout(() => {
@@ -1576,6 +1727,7 @@ function closeInputModal() {
   const modal = document.getElementById('inputModal');
   modal.classList.add('hidden');
   currentInputCallback = null;
+  unlockBodyScroll();
 }
 
 function confirmInputModal() {
