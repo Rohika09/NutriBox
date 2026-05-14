@@ -18,7 +18,7 @@ const BASE_URL = (function() {
     const host = location.hostname;
     if (host === 'localhost' || host === '127.0.0.1') return 'http://localhost:5000';
   } catch (e) {}
-  return 'https://your-backend.onrender.com';
+  return 'https://nutribox-0b0a.onrender.com';
 })();
 let currentCategory = 'all';
 let selectedIngredients = [];
