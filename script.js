@@ -10,6 +10,16 @@ let userNutrition = {
 
 let selectedMeals = [];
 let cart = [];
+// Base API URL: allow runtime override with `window.__BACKEND_URL`,
+// default to localhost for development, otherwise use deployed URL.
+const BASE_URL = (function() {
+  if (typeof window !== 'undefined' && window.__BACKEND_URL) return window.__BACKEND_URL;
+  try {
+    const host = location.hostname;
+    if (host === 'localhost' || host === '127.0.0.1') return 'http://localhost:5000';
+  } catch (e) {}
+  return 'https://your-backend.onrender.com';
+})();
 let currentCategory = 'all';
 let selectedIngredients = [];
 let customMeals = [];
@@ -1251,7 +1261,7 @@ async function sendOrderToBackend(deliveryInfo = null) {
 
   try {
     // POST to the backend. Backend runs on port 5000 by default.
-    const res = await fetch('http://localhost:5000/api/orders', {
+    const res = await fetch(`${BASE_URL}/api/orders`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(payload)
@@ -1277,7 +1287,7 @@ async function sendOrderToBackend(deliveryInfo = null) {
 // Useful during development / for admin view
 async function fetchOrdersFromBackend() {
   try {
-    const res = await fetch('http://localhost:5000/api/orders');
+    const res = await fetch(`${BASE_URL}/api/orders`);
     if (!res.ok) throw new Error('Failed to fetch orders');
     const orders = await res.json();
     console.log('Orders from backend:', orders);

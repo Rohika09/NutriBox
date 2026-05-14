@@ -31,7 +31,11 @@ Quick steps to run the backend server locally.
 
 5. Connect frontend
 
-   The frontend uses `fetch('http://localhost:5000/api/orders')` to talk to the backend.
+   The frontend uses a `BASE_URL` constant in `script.js` to talk to the backend. `BASE_URL` is now set automatically:
+
+   - It reads `window.__BACKEND_URL` if present (useful for runtime overrides).
+   - If the page is served from `localhost` or `127.0.0.1` it defaults to `http://localhost:5000`.
+   - Otherwise it defaults to `https://your-backend.onrender.com` (replace with your deployed URL).
    No changes to HTML/CSS were made. Only `script.js` includes two helper functions:
 
    - `sendOrderToBackend()` — called when confirming an order. It sends a POST to `/api/orders` with a payload containing `items`, `totalBoxes`, `totalProtein`, `totalCalories`, and (optional) `delivery`.

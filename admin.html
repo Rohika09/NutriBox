@@ -20,6 +20,15 @@
 
     <script>
       // admin.js inline: fetch orders from backend and render simple list
+      // Base API URL (match frontend `BASE_URL` in script.js)
+      const BASE_URL = (function(){
+        if (window && window.__BACKEND_URL) return window.__BACKEND_URL;
+        try {
+          const host = location.hostname;
+          if (host === 'localhost' || host === '127.0.0.1') return 'http://localhost:5000';
+        } catch (e) {}
+        return 'https://your-backend.onrender.com';
+      })();
       const ordersEl = document.getElementById('orders');
       const statusEl = document.getElementById('status');
       document.getElementById('refresh').addEventListener('click', loadOrders);
@@ -28,7 +37,7 @@
         statusEl.textContent = 'Fetching orders...';
         ordersEl.innerHTML = '';
         try {
-          const res = await fetch('http://localhost:5000/api/orders');
+          const res = await fetch(`${BASE_URL}/api/orders`);
           if (!res.ok) throw new Error('Failed to fetch orders');
           const data = await res.json();
           statusEl.textContent = `Found ${data.length} orders`;
